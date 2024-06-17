@@ -33,8 +33,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [GitHub](https://nuraf9607.github.io/fm-nft-preview-card/)
+- Live Site URL: [Live Link](https://nuraf9607.github.io/fm-nft-preview-card/)
 
 ## My process
 
@@ -84,9 +84,9 @@ Nothing new in particular
 
 ## Author
 
-- Website - [Add your name here](https://www.your-site.com)
-- Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/yourusername)
-- Twitter - [@yourusername](https://www.twitter.com/yourusername)
+- Website - Haven't created yet
+- Frontend Mentor - [@nuraf9607](https://www.frontendmentor.io/profile/nuraf9607)
+- Twitter - [@theAbdurRahman1](https://x.com/theAbdurRahman1)
 
 
 
