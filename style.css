@@ -1,0 +1,125 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap");
+:root {
+  /* Layout */
+  --mobile-width: 375px;
+  --desktop-width: 1440px;
+
+  /* Colors */
+  --soft-blue: hsl(215, 51%, 70%);
+  --cyan: hsl(178, 100%, 50%);
+
+  /* Neutral Colors */
+  --very-dark-blue-bg: hsl(217, 54%, 11%);
+  --very-dark-blue-card-bg: hsl(216, 50%, 16%);
+  --very-dark-blue-line: hsl(215, 32%, 27%);
+  --white: hsl(0, 0%, 100%);
+
+  /* Typography */
+  --font-family: "Outfit", sans-serif;
+  --font-weight-light: 300;
+  --font-weight-regular: 400;
+  --font-weight-bold: 600;
+  --font-size-paragraph: 18px;
+}
+
+body {
+  display: grid;
+  font-family: var(--font-family);
+  font-weight: var(--font-weight-regular);
+  background-color: var(--very-dark-blue-bg);
+}
+.nft-card {
+  max-width: 19rem;
+  background-color: var(--very-dark-blue-card-bg);
+  padding: 1.2rem;
+}
+h1 {
+  margin-block: 0.7rem;
+  font-size: 1.3rem;
+  display: inline-block;
+}
+
+
+h1,
+b,
+p:not(.soft-blue, .cyan) {
+  color: white;
+}
+.avatar-container {
+  display: flex;
+  gap: 1rem;
+  border-top: 1px solid var(--very-dark-blue-line);
+  padding-top: 1rem;
+  align-items: center;
+}
+
+.nft-stats,
+.nft-stats > * {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-block: 0.3rem;
+  font-size: 0.9rem;
+}
+.nft-stats img {
+  margin-right: 0.3rem;
+}
+.avatar-container img {
+  max-width: 2rem;
+  border: 1px solid white;
+  border-radius: 50%;
+}
+
+main {
+  place-self: center;
+}
+footer {
+  align-self: end;
+  justify-self: center;
+  color: white;
+}
+
+/* Transitions */
+.equilibrium {
+  position: relative;
+  overflow: hidden;
+}
+
+.equilibrium::before {
+  content: "";
+  position: absolute;
+  background-image: url(images/icon-view.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  inset: 0;
+  opacity: 0;
+  background-color: rgba(0, 255, 255, 0.466);
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
+}
+.equilibrium:hover::before{
+  opacity:  1;
+}
+b,  h1{
+  transition: all .3s;
+  cursor: pointer;
+}
+h1:hover , b:hover{
+  color: var(--cyan);
+}
+
+
+
+/* Shared Styles */
+
+.b-r {
+  border-radius: 0.7rem;
+}
+.soft-blue {
+  color: var(--soft-blue);
+  font-size: 0.9rem;
+  font-weight: var(--font-weight-light);
+}
+.cyan {
+  color: var(--cyan);
+}
